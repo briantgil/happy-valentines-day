@@ -1,12 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>My Page</title>
-<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            color: #96031A; 
+        }
+        .container{
+            width: 50%;
+            margin: auto;
+        }
+        .gif {
+            width: 50%;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .btn {
+            width: 25%;
+            /*height: 30px;*/
+            padding: 1% 0%;
+            margin: auto;
+            background-color: #96031A;
+            color: pink;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
 <body>
-<div>
-<p>
-Hello GitHub Pages!
-</p>
-</div>
+        
+    <div class="container">
+        <h1>Bae-4-Ever</h1>
+
+        <img id="gif" class="gif" src="./images/valentine's-day-wishes-love.gif" alt="valentines gif">
+
+        <h2>Be my valentine</h2>
+
+        <button id="btnYes" class="btn" onclick="saidYes()">Click to be mine</button>
+
+    </div>
+
+    <script>
+        function saidYes(){
+            let msg = "She said yes";
+            document.getElementById("gif").setAttribute("src", "./images/love-you-forever.gif");
+            document.getElementById("btnYes").innerHTML = msg;
+            document.getElementById("btnYes").setAttribute("disabled", true);
+        }
+    </script>
+
 </body>
 </html>
+
+
