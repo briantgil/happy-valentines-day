@@ -8,37 +8,31 @@
       href="https://fonts.googleapis.com/css?family=Petit Formal Script"
       rel="stylesheet"
     />
+
     <style>
       body {
         background-color: pink;
         text-align: center;
         color: #96031a;
-        /*font-family: 'Brush Script MT', cursive;*/
-        font-family: "Petit Formal Script";
+        font-family: "Petit Formal Script", "Brush Script MT", cursive;
         font-size: 22px;
       }
       .container {
         width: 75%;
         margin: auto;
       }
-      .gif {
+      #gif {
         width: 75%;
         display: block;
         margin: auto;
         border-radius: 10px;
       }
-      .btn {
-        /*width: 25%;
-        height: 30px;*/
-        /*padding: 1% 0%;*/
+      #outer-heart-btn {
         margin: auto;
         background-color: #96031a;
-        /*color: pink;*/
         border-radius: 5px;
-        /*font-weight: bold;*/
       }
-
-      #heart-button {
+      #heart-btn {
         height: 50px;
         width: 50px;
         border-radius: 5px;
@@ -53,16 +47,15 @@
 
       <img
         id="gif"
-        class="gif"
         src="./images/valentine's-day-wishes-love.gif"
         alt="valentines gif"
       />
 
       <h2>Be my valentine</h2>
 
-      <button id="btnYes" class="btn" onclick="saidYes()">
+      <button id="outer-heart-btn" onclick="saidYes()">
         <img
-          id="heart-button"
+          id="heart-btn"
           src="./images/360_F_19895879_uZ0tHguWowgKxb7jgUzuJk7IdXJCYZkI.jpg"
           alt="valentines heart"
         />
@@ -74,12 +67,9 @@
 
     <script>
       function saidYes() {
-        let msg = "You said yes!";
         document
           .getElementById("gif")
           .setAttribute("src", "./images/love-you-forever.gif");
-        //document.getElementById("btnYes").innerHTML = msg;
-        //document.getElementById("btnYes").setAttribute("disabled", true);
       }
     </script>
   </body>
