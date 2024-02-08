@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bae4Ever</title>
-    <link href='https://fonts.googleapis.com/css?family=Petit Formal Script' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Petit Formal Script"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            background-color: pink;
-            text-align: center;
-            color: #96031A; 
-            /*font-family: 'Brush Script MT';*/
-            font-family: 'Petit Formal Script';font-size: 22px;
-        }
-        .container{
-            width: 50%;
-            margin: auto;
-        }
-        .gif {
-            width: 50%;
-            display: block;
-            margin: auto;
-            border-radius: 10px;
-        }
-        .btn {
-            width: 25%;
-            /*height: 30px;*/
-            padding: 1% 0%;
-            margin: auto;
-            background-color: #96031A;
-            color: pink;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        h2 {
-            font-size: xx-large;
-        }
+      body {
+        background-color: pink;
+        text-align: center;
+        color: #96031a;
+        /*font-family: 'Brush Script MT', cursive;*/
+        font-family: "Petit Formal Script";
+        font-size: 22px;
+      }
+      .container {
+        width: 75%;
+        margin: auto;
+      }
+      .gif {
+        width: 75%;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+      }
+      .btn {
+        /*width: 25%;
+        height: 30px;*/
+        /*padding: 1% 0%;*/
+        margin: auto;
+        background-color: #96031a;
+        /*color: pink;*/
+        border-radius: 5px;
+        /*font-weight: bold;*/
+      }
+
+      #heart-button {
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+        margin: auto;
+      }
     </style>
-</head>
-<body>
-        
+  </head>
+  <body>
     <div class="container">
-        <h1>Bae-4-Ever</h1>
+      <h1>Bae-4-Ever</h1>
 
-        <img id="gif" class="gif" src="./images/valentine's-day-wishes-love.gif" alt="valentines gif">
+      <img
+        id="gif"
+        class="gif"
+        src="./images/valentine's-day-wishes-love.gif"
+        alt="valentines gif"
+      />
 
-        <h2>Be my valentine</h2>
+      <h2>Be my valentine</h2>
 
-        <button id="btnYes" class="btn" onclick="saidYes()">Click to be mine</button>
+      <button id="btnYes" class="btn" onclick="saidYes()">
+        <img
+          id="heart-button"
+          src="./images/360_F_19895879_uZ0tHguWowgKxb7jgUzuJk7IdXJCYZkI.jpg"
+          alt="valentines heart"
+        />
+      </button>
 
+      <p>Brian &amp; Thain-Gi</p>
+      <p>2/14/2024</p>
     </div>
 
     <script>
-        function saidYes(){
-            let msg = "You said yes!";
-            document.getElementById("gif").setAttribute("src", "./images/love-you-forever.gif");
-            document.getElementById("btnYes").innerHTML = msg;
-            document.getElementById("btnYes").setAttribute("disabled", true);
-        }
+      function saidYes() {
+        let msg = "You said yes!";
+        document
+          .getElementById("gif")
+          .setAttribute("src", "./images/love-you-forever.gif");
+        //document.getElementById("btnYes").innerHTML = msg;
+        //document.getElementById("btnYes").setAttribute("disabled", true);
+      }
     </script>
-
-</body>
+  </body>
 </html>
-
-
